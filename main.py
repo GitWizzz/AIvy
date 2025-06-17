@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb+srv://kunalk9521:FTRzVtcqcIRUgIox@devlopment.eu1u1os.mongodb.net/chatgbt"
 mongo = PyMongo(app)
 
-genai.configure(api_key="AIzaSyAh7SUKNFJm4MbzAcm-iZy4MQIQoe52rHE")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 
 generation_config = {
