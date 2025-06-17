@@ -15,7 +15,6 @@ generation_config = {
     "top_k": 1,
     "max_output_tokens": 2048,
 }
-
 safety_settings = [
     {
         "category": "HARM_CATEGORY_HARASSMENT",
